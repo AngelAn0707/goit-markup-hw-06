@@ -93,8 +93,10 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
     display: inline-block;
+}
+.logo-header{
+margin-right: 76px;
 }
 .header-logo-style {
     color: #2e2f42;
@@ -331,7 +333,7 @@ font-weight: 500;
     height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
-   
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,7 +417,7 @@ font-weight: 500;
  @media only screen and (min-width: 758px) {
     .hero-page {
 max-width: 768px;
-height: 436px;
+
 margin: auto;
 padding-top: 188px;
 padding-bottom: 188px;
@@ -573,7 +575,7 @@ font-weight: 400;
          /* #region main section2 */
     
     .our-team {
-    width: 320px;
+    
     height: 2232px;
     background: #f4f4fd;
     padding-top: 96px;
@@ -663,9 +665,12 @@ width: 100%;
     .our-team {
         padding-top: 96px;
         padding: bottom 96px;
-        width: 768px; 
+ 
         height: auto;
     }
+        .container-team-wraper {
+            width: 584px;
+        }
         .our-team-list {
         gap: 24px;
         flex-direction: row;
@@ -681,10 +686,10 @@ width: 100%;
 
 @media screen and (min-width: 1158px) {
     .our-team {
-        width: 1440px;
-        height: auto;
-        
-        
+        height: auto;   
+    }
+    .container-team-wraper{
+        max-width: 1158px;
     }
 .our-team-item {
 
@@ -700,7 +705,7 @@ width: 100%;
           
  .our-portfolio-section {
      padding-top: 96px;
-
+    padding-bottom: 96px;
  }
 
  .our-portfolio-title {
@@ -823,6 +828,7 @@ width: 100%;
  @media screen and (min-width: 1158px) {
      .our-portfolio-section {
          padding-top: 120px;
+         padding-bottom: 120px;
      }
 
      .our-portfolio-list {
@@ -870,11 +876,11 @@ width: 100%;
       flex-direction: column;
       align-items: center;
     justify-content: center;
-   
+    
   }
 
   .logo-fotter-logo {
-    
+  
       font-family: "Raleway", sans-serif;
       gap: 0px;
       width: 116px;
@@ -903,8 +909,6 @@ width: 100%;
       width: 208px;
       padding: 0;
       margin: 0;
-      margin-right: auto;
-      margin-left: auto;
       margin-top: 72px;
       display: flex;
       flex-direction: column;
@@ -1037,6 +1041,7 @@ width: 100%;
           display: flex;
           flex-wrap: wrap;
           align-items: baseline;
+          max-width: 584px;
       }
 
       .footer-container-form {
@@ -1060,7 +1065,7 @@ width: 100%;
 
           .logo-container {
               width: 264px;
-              margin-right: 156px;
+              margin-right: 120px;
               align-items: flex-start;
           }
 
@@ -1094,7 +1099,8 @@ width: 100%;
           }
 
           .footer-container {
-              margin-left: 60px;
+         
+            max-width: 1158px;      
               flex-wrap: nowrap;
 
 
