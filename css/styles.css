@@ -72,8 +72,6 @@ button {
 /* #region header */
 
 .header-page {
-    width: 320px;
-    height: 56px;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
@@ -123,10 +121,7 @@ button {
     fill: #2f2f37;
 }
 @media screen and (min-width: 768px) {
-    .header-page {
-    width: 768px;
-   
-    }
+  
     .burder-button {
         display: none;
     }
@@ -155,7 +150,7 @@ margin-right: 120px;
 
    }
    .header-nav-item-link {
- 
+        display: block;
        font-weight: 500;
        font-size: 16px;
        line-height: 1.5;
@@ -211,7 +206,7 @@ margin-right: 120px;
 }
 @media screen and (min-width: 1158px) {
 .header-page {
-    width: 1440px;
+   
     height: none;
 }
     .logo {
@@ -421,6 +416,9 @@ font-weight: 500;
     .hero-page {
 max-width: 768px;
 height: 436px;
+margin: auto;
+padding-top: 188px;
+padding-bottom: 188px;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office_tablet_1px.jpg);
     }
@@ -466,10 +464,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) 
 
             /* #region main section1*/
 .section {
-  padding-top: 96px;
+  padding-top: 72px;
   padding-bottom: 96px; 
-
 height: auto;
+margin: auto;
 }
 .feature-title{
     display: flex;
@@ -481,7 +479,7 @@ height: auto;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-gap: 72px;
+gap: 72px 24px;
 width: 100%;
 }
 .feature-item {
@@ -513,7 +511,8 @@ color: #434455;
 
 @media screen and (min-width: 758px) {
     .section {
-
+margin-left: auto;
+margin-right: auto;
 padding-top: 96px;
 padding-bottom: 96px;
 
@@ -527,7 +526,7 @@ text-align: left;
 
  .feature-item {
 
-     width: calc((100% - 72px) / 2);
+     width: calc((100% - 24px) / 2);
 
  }
 }
@@ -577,7 +576,8 @@ font-weight: 400;
     width: 320px;
     height: 2232px;
     background: #f4f4fd;
-  
+    padding-top: 96px;
+    padding-bottom: 96px;
          }
     .our-team-title {
     font-weight: 700;
@@ -662,7 +662,7 @@ width: 100%;
 @media screen and (min-width: 758px) {
     .our-team {
         padding-top: 96px;
-            padding: bottom 96px;
+        padding: bottom 96px;
         width: 768px; 
         height: auto;
     }
@@ -683,6 +683,8 @@ width: 100%;
     .our-team {
         width: 1440px;
         height: auto;
+        
+        
     }
 .our-team-item {
 
@@ -767,7 +769,7 @@ width: 100%;
      line-height: 1.2;
      letter-spacing: 0.02em;
      color: #2e2f42;
-     padding-top: 32px;
+   
 
 
  }
@@ -783,13 +785,7 @@ width: 100%;
  }
 
  @media screen and (min-width: 758px) {
-     .our-portfolio-section {
-         padding-top: 96px;
-
-         width: 736px;
-         height: auto;
-     }
-
+   
      .our-portfolio-list {
          display: flex;
          flex-wrap: wrap;
@@ -827,8 +823,6 @@ width: 100%;
  @media screen and (min-width: 1158px) {
      .our-portfolio-section {
          padding-top: 120px;
-         width: 1440px;
-         height: auto;
      }
 
      .our-portfolio-list {
@@ -860,32 +854,28 @@ width: 100%;
 
    /* #footer */
   .footer {
-      width: 320px;
-      height: 664px;
+   
       background-color: #2e2f42;
       padding-top: 96px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      margin-top: 96px;
+      padding-bottom: 96px;
 
   }
 
   .logo-container {
-     
+  
       display: flex;
       flex-direction: column;
       align-items: center;
     justify-content: center;
+   
   }
 
   .logo-fotter-logo {
-
+    
       font-family: "Raleway", sans-serif;
-      display: flex;
-      align-items: center;
-    justify-content: center;
-      flex-direction: row;
       gap: 0px;
       width: 116px;
       height: 24px;
@@ -1040,14 +1030,9 @@ width: 100%;
   }
 
   @media screen and (min-width: 758px) {
-      .footer {
-          width: 768px;
-          height: auto;
-
-      }
+   
 
       .footer-container {
-          padding-left: 108px;
           height: auto;
           display: flex;
           flex-wrap: wrap;
@@ -1059,8 +1044,7 @@ width: 100%;
           align-items: center;
       }
       .social-media-container {
-        margin-left: 20px;
-        margin-right: 0;
+      
         margin-top: 0;
         align-items: flex-start;
       }
@@ -1069,12 +1053,9 @@ width: 100%;
       }
       @media screen and (min-width: 1158px) {
           .footer {
-             
-              width: 1440px;
-              height: 312px;
               padding-top: 100px;
-                margin-left: 0;
-            padding-left: 0;
+         
+            padding-bottom: 100px;
           }
 
           .logo-container {
